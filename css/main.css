@@ -1,0 +1,53 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+div.box{
+    display:inline-block;
+    height:300px;
+    width:25%;
+}
+
+div.box.red{
+    background-color: red;;
+}
+
+div.box.blue{
+    background-color: blue;
+}
+
+div.box.green{
+    background-color: green;
+}
+
+div.box.yellow{
+    background-color: yellow;
+}
+
+div.container{
+    width:200px;
+    height:200px;
+    background-color: purple;
+}
+
+@media (max-width:600px){
+
+    div.box.blue{
+        display:none;
+    }
+    
+    div.box.green{
+        display:none;
+    }
+
+}
+
+@media (min-width:1000px){
+    
+    div.box{
+        width:100%;
+    }
+    
+}
